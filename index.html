@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بيتنا - لعبة سين جيم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 بيتنا - لعبة سين جيم</h1>
+    <div id="setup">
+      <input type="text" id="team1" placeholder="اسم الفريق الأول">
+      <input type="text" id="team2" placeholder="اسم الفريق الثاني">
+      <button onclick="startGame()">ابدأ اللعبة</button>
+    </div>
+    <div id="game" class="hidden">
+      <h2 id="turn"></h2>
+      <p id="question"></p>
+      <button onclick="nextQuestion()">السؤال التالي</button>
+      <button onclick="addPoint()">+ نقطة</button>
+      <h3>النتائج</h3>
+      <p id="score1"></p>
+      <p id="score2"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
